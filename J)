@@ -1,0 +1,22 @@
+sing System;
+
+namespace matheus
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			 int soma = 0;  
+			 
+        for (int i = 0; i <= 100; i += 2)
+        {
+           
+        	 soma += (i);
+        	Console.WriteLine("Os numeros somados é :" + soma);
+        	
+        	
+        }
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
