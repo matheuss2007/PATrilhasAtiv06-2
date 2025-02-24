@@ -1,0 +1,31 @@
+using System;
+using System.Linq;
+
+namespace matheus{
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+    		Console.Write("Informe quantos números você deseja inserir: ");
+        int j = int.Parse(Console.ReadLine());
+
+        int[] numero1 = new int[j]; 
+
+        for (int i = 0; i < j; i++)
+        {
+            Console.Write(
+        		"Insira o {0}º número: ", i + 1);
+            numero1[i] = int.Parse(Console.ReadLine());
+        }
+
+        var ordenadoDesc = numero1.OrderByDescending(n => n).ToArray();
+    		
+    	
+        Console.Write("Press any key to continue . . . ");
+        Console.ReadKey(true);
+  
+        }
+    } 
+}
+  
